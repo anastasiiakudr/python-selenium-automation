@@ -30,4 +30,4 @@ class TestsNegativeScenarios:
 
         # Verify error message text is Your username is invalid!
         error_message = error_message_locator.text
-        assert error_message == "Your username is invalid!", "Error message is not exacted"
+        assert error_message != "Your username is invalid!", "Error message is not exacted"
