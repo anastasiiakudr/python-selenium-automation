@@ -1,10 +1,13 @@
 import time
 
+import pytest
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 
 class TestsNegativeScenarios:
+    @pytest.mark.login
+    @pytest.mark.negative
     def test_login_page_negative(self):
         # Open page
         driver = webdriver.Chrome()
