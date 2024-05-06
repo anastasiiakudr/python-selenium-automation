@@ -8,7 +8,7 @@ from selenium.webdriver.common.by import By
 class TestPositiveScenarios:
     @pytest.mark.login
     @pytest.mark.positive
-    def test_login_page(self):
+    def test_login_page(self, driver):
         # Open browser
         driver = webdriver.Chrome()
         time.sleep(5)
