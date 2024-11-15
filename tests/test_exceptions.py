@@ -18,8 +18,8 @@ class TestExceptions:
         assert exceptions_page.is_row2_displayed(), "Row 2 input should be displayed, but it's not"
 
     @pytest.mark.exceptions
-    def test_element_not_interactable_exception(self, driver):
-        # Test for element not interactable exception
+    def test_element_not_intractable_exception(self, driver):
+        # Test for element not intractable exception
         exceptions_page = ExceptionsPage(driver)
         exceptions_page.open()
         exceptions_page.add_second_row()
